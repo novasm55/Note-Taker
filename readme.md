@@ -18,7 +18,14 @@ Note Taker app frontend provided, I refactored the backend to add routers to ena
 
 Installation instructions:
 
-Clone repo locally, git init i, git install express.js node, navigate to directory in git bash, run nodemon server.js and go to localport 3001 in browser or go directly to the deployed app at https://note-taker-novas.herokuapp.com/
+Clone repo at
+![URL](https://github.com/novasm55/Note-Taker)
+
+
+locally, git init i, git install express.js node, navigate to directory in git bash, run nodemon server.js and go to localport 3001 in browser
+
+or go directly to the deployed app at 
+![URL](https://note-taker-novas.herokuapp.com/)
 
 ## Usage
 
