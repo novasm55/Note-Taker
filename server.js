@@ -5,12 +5,14 @@ const fs = require('fs');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
-const PORT = process.env.PORT || 3001;
+const PORT = 3001;
+
+
+// Middleware
 
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 app.use(express.static('public'));
-
 
 // Get routes
 
@@ -18,12 +20,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
 });
 
-app.get('/notes', (req, res) => {
-  res.sendFile(path.join(__dirname, '/public/notes.html'));
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, './public/notes.html'));
 });
 
-
-//API notes
 // GET request for notes
 
 app.get('/api/notes', (req, res) => {
@@ -34,7 +34,7 @@ app.get('/api/notes', (req, res) => {
     }
     res.json(JSON.parse(data));
 
-    console.log('${req.method} notes get request')
+
   });
 });
 
@@ -57,6 +57,9 @@ app.post('/api/notes', (req, res) => {
     });
   });
 });
+
+
+//API note
 
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, './public/index.html'));
