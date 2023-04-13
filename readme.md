@@ -12,7 +12,7 @@
 
 ## Description 
 
-Note Taker app frontend provided, I refactored the backend to add routers to enable CRUD for the creation and retreival of notes via express.js
+Note Taker app frontend provided, I refactored the backend to add routers to enable CRUD for the creation and retrieval of notes via express.js
 
 ### Screenshot
 
